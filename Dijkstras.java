@@ -1,6 +1,14 @@
 package nickCodingTest;
 import java.util.*;
 
+// Implements Dijkstra's minpath algorthm to find the
+// shortest distance from a vertex (in this case vertex 0) to the rest of the connected
+// nodes in a graph using an adjacency matrix representation of a graph
+
+// with a heap implementation runs in O(log(E + V)) time where E is the number of 
+// edges in the graph and V is the number of vertices. Worst case heap removal
+// will occur once for each vertex and possibly once for each edge as well if each edge contributes
+// to the possibility of a shorter path and an increase in priority.
 public class Dijkstras {
 	
 	public static void main(String[] args) {
@@ -22,6 +30,9 @@ public class Dijkstras {
 		}
 	}
 	
+	// implements dijstras algorithm using a heap to keep track of pairs of vertices
+	// and the current shortest path to them. Assumes that all edge weights are positive
+	// and the paths can only increase in length and not decrease as the graph is traversed
 	public static void dijkStras(int[][] edges, Map<Integer, Pair> minMap) {
 		// keeps track of which edges we have found the shortest path already for
 		Set<Integer> seen = new HashSet<Integer>();
