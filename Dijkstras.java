@@ -4,10 +4,11 @@ import java.util.*;
 // Implements Dijkstra's minpath algorthm to find the
 // shortest distance from a vertex (in this case vertex 0) to the rest of the connected
 // nodes in a graph using an adjacency matrix representation of a graph
+// with an adjacency list runtime would be improved if the matrix had sparse entries
 
-// with a heap implementation runs in O(log(E + V)) time where E is the number of 
+// with a heap implementation runs in O(E * log(V)) time where E is the number of 
 // edges in the graph and V is the number of vertices. Worst case heap removal
-// will occur once for each vertex and possibly once for each edge as well if each edge contributes
+// will occur once for each edge in the graph if each edge contributes
 // to the possibility of a shorter path and an increase in priority.
 public class Dijkstras {
 	
@@ -57,6 +58,7 @@ public class Dijkstras {
 					if (!minMap.containsKey(i)) {
 						minMap.put(i, new Pair(i, minVert.dist + vertEdges[i]));
 						heap.add(minMap.get(i));
+						
 					// we have seen this node before let's see if we found a faster route
 					// if so let's update the min distance for the vertex i	
 					} else if (minVert.dist + vertEdges[i] < minMap.get(i).dist) {
