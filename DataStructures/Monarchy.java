@@ -1,6 +1,10 @@
 package nickCodingTest;
 import java.util.*;
 
+// data structure to represent a monarchy/ royal family tree
+// children can be birthed to already birthed parents,
+// family members may die, and the current order of succession
+// of family members can be retrieved as well
 public class Monarchy {
 	RoyalNode root;
 	Map<String, RoyalNode> family;
@@ -32,7 +36,8 @@ public class Monarchy {
 	}
 	
 	// births the child to the parent
-	// with the hashmap of tree nodes birth can occur in O(1)
+	// with the hashmap of tree nodes birth can occur in O(1) as insertion into the parents tree map
+	// should be roughly fast as there shouldn't be too terribly many children per parent 
 	// If parent is not yet birthed will throw an illegal argument exception
 	// will only birth if the parent is alive, otherwise silently does nothing
 	public void birth(String parent, String child) {
