@@ -2,6 +2,10 @@ package nickCodingTest;
 
 import java.util.Random;
 
+// Class that contains method to 
+// sort an int [] using a quick sort, picking pivots
+// grouping based on higher or lower/equal than the pivot and then
+// sorts sub groups recursively
 public class QuickSort {
 	public static void main(String[] args) {
 		int[] arr = new int[10];
@@ -16,11 +20,10 @@ public class QuickSort {
 		printArray(arr);
 	}
 	
-	// does a quick sort on the given int array
-	// in place on the given array
+	// does a quick sort on the given int array in place
 	// picks a pivot and then sorts the data range based on whether or not values
 	// are higher or lower then the pivot
-	// worst case runtime complexity is O (n ^ 2) if values are not symmetric about pivot
+	// worst case runtime complexity is O (n ^ 2) if values are always skewed about the pivots
 	// best case runtime complexity is O (n * log (n)) if in general values are symmetric about the pivots
 	public static void quickSort(int[] arr, int low, int high) {
 		// if the array is empty, the subrange has 0 or 1 elements
