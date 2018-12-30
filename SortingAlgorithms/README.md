@@ -5,7 +5,7 @@ Implementation of various sorting algorithms that can be used to sort data, appl
 
 **MergeSort.java**-   Sort which breaks input data into subranges sorts the subranges and recombines sorted sub ranges
 
-**RadixSort.java**-   Sort which sorts input data by looking at values digit by digit, and placing values into buckets
+**RadixSort.java**-   Sort which sorts input data by looking at values digit by digit, and places values into buckets by digit
 
 **QuickSort.java** -  Sort which sorts input data by picking a pivot and grouping values based on lower/equal and higher than the pivot and then sorts sub groups  
 
