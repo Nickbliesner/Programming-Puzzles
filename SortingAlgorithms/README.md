@@ -10,3 +10,5 @@ Implementation of various sorting algorithms that can be used to sort data, appl
 **QuickSort.java** -  Sort which sorts input data by picking a pivot and grouping values based on lower/equal and higher than the pivot and then sorts sub groups  
 
 **BubbleSort.java** - Sort which sorts input data by comparing elements pairwise and swapping elements when necessarry, repeating passes until sorted
+
+**CountSort.java**-   Sort which sorts input data by taking an inventory/ count of the occurences of each value in the input and then outputs each value the appropriate number of times to the input array, (requires knowledge of smallest and largest possible int vals)
