@@ -1,5 +1,5 @@
 # SortingAlgorithms
-Implementation of various sorting algorithms that can be used to sort data, applied to int []'s
+Implementation of various sorting algorithms (various space and runtime complexities) that can be used to sort data, applied to int []'s
 
 **HeapSort.java**-    Sort using a min heap data structure to store and sort the input data
 
