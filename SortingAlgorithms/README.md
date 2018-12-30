@@ -6,3 +6,5 @@ HeapSort.java- Sort using a heap data structure to store and sort the input data
 MergeSort.java- Sort which breaks input data into subranges sorts the subranges and recombines sorted sub ranges
 
 RadixSort.java- Sort which sorts input data by looking at values digit by digit, and placing values into buckets
+
+QuickSort.java - Sort which sorts input data by picking a pivot and grouping values based on lower and higher than the pivot and then sorts sub groups  
