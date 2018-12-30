@@ -1,7 +1,7 @@
 # SortingAlgorithms
 Implementation of various sorting algorithms that can be used to sort data, applied to int []'s
 
-**HeapSort.java**-    Sort using a heap data structure to store and sort the input data
+**HeapSort.java**-    Sort using a min heap data structure to store and sort the input data
 
 **MergeSort.java**-   Sort which breaks input data into subranges sorts the subranges and recombines sorted sub ranges
 
