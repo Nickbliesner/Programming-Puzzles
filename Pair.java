@@ -1,7 +1,14 @@
 package nickCodingTest;
 
+// Data structure utilized by graph traversal
+// algorithms requiring the need to keep track of
+// vertex numbers as well as distances to that vert
+// from a chosen vert (ie. Dijkstras etc.)
 public class Pair implements Comparable<Pair> {
+	// vertex number
 	int vert;
+	
+	// distance to current vert from a target vertex
 	int dist;
 	
 	public Pair(int vert, int dist) {
