@@ -15,4 +15,4 @@ Implementation of various sorting algorithms (various space and runtime complexi
 
 **InsertionSort.java** - Sort which sorts input data by keeping track of a sorted frontier and inserting new elements into the previously sorted portion of the array
 
-**ShellSort.java** - Sort which sorts input data by expanding on the ideas of insertion sort and bubble sort. Sorts all elements which are a gap apart using a comparison sort like insertion/bubble sort with a sequence of gaps, ultimately ending in doing an improved comparison sort (a gap of 1)
+**ShellSort.java** - Sort which sorts input data by expanding on the ideas of insertion sort and bubble sort. Sorts all elements which are a gap apart using a comparison sort like insertion/bubble sort with a sequence of gaps, ultimately ending in doing an improved normal bubble/insertion sort (a gap of 1)
