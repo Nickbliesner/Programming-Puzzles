@@ -14,3 +14,5 @@ Implementation of various sorting algorithms (various space and runtime complexi
 **CountSort.java**-   Sort which sorts input data by taking an inventory/ count of the occurences of each value in the input and then outputs each value the appropriate number of times to the input array, (requires knowledge of smallest and largest possible int vals)
 
 **InsertionSort.java** - Sort which sorts input data by keeping track of a sorted frontier and inserting new elements into the previously sorted portion of the array
+
+**ShellSort.java** - Sort which sorts input data by expanding on the ideas of insertion sort and bubble sort. Sorts all elements which are a gap apart using a comparison sort like insertion/bubble sort with a sequence of gaps, ultimately ending in doing an improved comparison sort (a gap of 1)
