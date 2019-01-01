@@ -16,3 +16,7 @@ Implementation of various sorting algorithms (various space and runtime complexi
 **InsertionSort.java** - Sort which sorts input data by keeping track of a sorted frontier and inserting new elements into the previously sorted portion of the array
 
 **ShellSort.java** - Sort which sorts input data by expanding on the ideas of insertion sort and bubble sort. Sorts all elements which are a gap apart using a comparison sort like insertion/bubble sort with a sequence of gaps, ultimately ending in doing an improved normal bubble/insertion sort (a gap of 1)
+
+**FreqSort.java** - Sort which sorts input data by sorting the data based on descending frequency (number of occurences) breaking ties by ascending value, returns new array of distinct values in appopriate frequency order
+
+**Pair.java** - Data structure utilized by freq sort that stores pairs of integer values and counts/frequencies
