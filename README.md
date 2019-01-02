@@ -8,3 +8,5 @@ Public repository to house my different approaches for many fun and exciting pro
 **SearchingAlgorithms** - Implementation of various searching algorithms for sorted and unsorted data (linear search, binary search, ternary search, etc.), demonstrated on int[] 's
 
 **SortingAlgorithms** - Implementation of various sorting algorithms (heap sort, quick sort, merge sort, etc...), demonstrated with int[] 's,
+
+**DynamicProgramming** - Applying dynamic programming, solving the problem involves solving similar sub problems etc., to solve interesting math and computing questions (number of unique BST's, Combinations, min prime sum, etc.)
