@@ -114,6 +114,7 @@ public class Trie {
 		
 		// at this point we have deleted the current
 	}
+	
 	// private helper for traversing the trie given a word string
 	// returns null if a character is absent otherwise returns the
 	// trie node which corresponds to the end of the string
