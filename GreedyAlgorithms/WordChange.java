@@ -148,6 +148,7 @@ public class WordChange {
 		for (int i = 1; i < li.size(); i++) {
 			System.out.print(", " + li.get(i));
 		}
+		
 		System.out.println();
 	}
 }
