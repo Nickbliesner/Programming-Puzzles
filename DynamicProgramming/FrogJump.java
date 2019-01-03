@@ -73,7 +73,7 @@ public class FrogJump {
 			}
 		}
 		
-		// the value at index 0 will now hold the
+		// the value at index 0 will now hold the min number of jumps
 		return arr[0];
 	}
 	
