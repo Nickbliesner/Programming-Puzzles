@@ -3,7 +3,7 @@ Public repository to house my different approaches for many fun and exciting pro
 
 **DataStructures**- Implementation of various data structures (KHeap, Trie, monarchy/royal family tree, etc.)
 
-**DynamicProgramming** - Applying dynamic programming, solving the problem involves solving similar sub problems etc., to solve interesting math and computing questions (number of unique BST's, Combinations, min prime sum, etc.)
+**DynamicProgramming** - Applying dynamic programming, solving the problem involves solving similar sub problems etc., to solve interesting math and computing questions (number of unique BST's, Combinations, min square sum, etc.)
 
 **GreedyAlgorithms**- Implementation of various greedy Algorithms (Dijkstra's, word to word, etc.) which assume at a certain step the optimal one (min or max) will lead to the right solution
 
