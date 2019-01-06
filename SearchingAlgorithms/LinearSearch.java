@@ -1,4 +1,4 @@
-package nickCodingTest;
+package SearchingAlgorithms;
 
 import java.util.Random;
 

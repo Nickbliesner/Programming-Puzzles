@@ -1,4 +1,4 @@
-package nickCodingTest;
+package SortingAlgorithms;
 
 public class Pair implements Comparable<Pair> {
 	int val;

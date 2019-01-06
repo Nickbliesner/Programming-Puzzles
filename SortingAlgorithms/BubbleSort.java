@@ -1,4 +1,4 @@
-package nickCodingTest;
+package SortingAlgorithms;
 
 import java.util.Random;
 

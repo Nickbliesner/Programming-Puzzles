@@ -1,6 +1,5 @@
-package nickCodingTest;
+package SortingAlgorithms;
 
-import java.util.Random;
 import java.util.*;
 
 // Class that contains method to 

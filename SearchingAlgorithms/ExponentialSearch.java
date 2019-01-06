@@ -1,9 +1,8 @@
-package nickCodingTest;
+package SearchingAlgorithms;
 
 import java.util.Random;
 
-import nickCodingTest.SortingAlgorithms.MergeSort;
-import nickCodingTest.*;
+import SortingAlgorithms.MergeSort;
 
 // Class that contains a method for performing 
 // an exponential search on a sorted int [].

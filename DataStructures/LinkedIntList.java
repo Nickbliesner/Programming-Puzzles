@@ -1,8 +1,6 @@
-package nickCodingTest;
+package DataStructures;
 
-import java.util.LinkedList;
-
-// data structure that
+// implementation of a data structure that
 // represents a linked list of integers
 // with sequential access
 // and fairly quick insertion
@@ -25,6 +23,7 @@ public class LinkedIntList {
 			li.add(i);
 		}
 		
+		li.addHead(-11);
 		System.out.println(li);
 		
 		li.add(5, -1);
@@ -58,13 +57,13 @@ public class LinkedIntList {
 	}
 	
 	// returns the size of the list
-	// Worst case runtime is O (1) as size is a field
+	// Worst case runtime is O(1) as size is a field
 	public int size() {
 		return size;
 	}
 	
 	// returns whether or not the list is empty
-	// Worst case runtime is O (1), as the size field is checked
+	// Worst case runtime is O(1), as the size field is checked
 	public boolean isEmpty() {
 		return size == 0;
 	}
@@ -87,6 +86,7 @@ public class LinkedIntList {
 			tail = tail.next;
 		}
 		
+		// update the size
 		size++;
 	}
 	
@@ -104,12 +104,13 @@ public class LinkedIntList {
 			tail = head;
 		}
 		
+		// update the size
 		size++;
 	}
 	
 	// adds the given val to the given index in the list
 	// if the index is out of bounds throws an illegal argument exception
-	// Worst case runtime is O (n) as we must iterate through the list
+	// Worst case runtime is O(n) as we must iterate through the list
 	// to get the point of insertion
 	public void add(int index, int val) {
 		// verify that the index of insertion is in bounds
@@ -220,7 +221,7 @@ public class LinkedIntList {
 	// of the copied list
 	// Worst case runtime is O (n) as all nodes
 	// in the list must be observed to perform a complete copy
-	public ListNode deapCopy() {
+	public ListNode deepCopy() {
 		if (size == 0) {
 			return null;
 		}

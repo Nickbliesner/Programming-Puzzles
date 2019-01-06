@@ -1,8 +1,8 @@
-package nickCodingTest;
+package SearchingAlgorithms;
 
 import java.util.Random;
 
-import nickCodingTest.SortingAlgorithms.MergeSort;
+import SortingAlgorithms.MergeSort;
 
 // Class that contains a method for performing 
 // a jump search on a sorted int [].

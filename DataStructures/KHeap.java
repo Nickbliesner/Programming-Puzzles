@@ -1,4 +1,4 @@
-package nickCodingTest;
+package DataStructures;
 import java.util.*;
 
 // implementation for a min k heap data structure

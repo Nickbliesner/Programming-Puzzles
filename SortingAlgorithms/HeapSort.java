@@ -1,5 +1,6 @@
-package nickCodingTest;
+package SortingAlgorithms;
 
+import DataStructures.KHeap;
 import java.util.Random;
 
 // Class that contains method to 

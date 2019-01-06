@@ -1,4 +1,4 @@
-package nickCodingTest;
+package DataStructures;
 import java.util.*;
 
 public class TrieNode {

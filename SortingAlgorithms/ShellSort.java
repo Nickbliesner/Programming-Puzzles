@@ -1,15 +1,15 @@
-package nickCodingTest;
+package SortingAlgorithms;
 
 import java.util.Random;
 
 // Class that contains method to 
 // sort an int [] using a shell sort, an 
-// expansion of the the comparison
+// expansion on the comparison
 // and insertion sorting of bubble sort and insertion sort.
 // Makes several passes sorting all elements i apart each time, decreasing
-// the gap size i until it reaches 1 and a normal insertion sort is performed.
+// the gap size i until it reaches 1 and a normal insertion or bubble sort is performed.
 // with a good gap sequence moves elements in place much more quickly
-// than a normal insertion sort is able to
+// than a normal insertion or bubble sort is able to
 public class ShellSort {
 	public static void main(String[] args) {
 		int[] arr = new int[20];

@@ -1,5 +1,5 @@
-package nickCodingTest;
-import nickCodingTest.MergeSort;
+package SortingAlgorithms;
+
 import java.util.Random;
 import java.util.*;
 

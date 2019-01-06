@@ -1,4 +1,4 @@
-package nickCodingTest;
+package DataStructures;
 import java.util.*;
 
 // data structure to represent a monarchy/ royal family tree
@@ -36,8 +36,8 @@ public class Monarchy {
 	}
 	
 	// births the child to the parent
-	// with the hashmap of tree nodes birth can occur in O(1) as insertion into the parents tree map
-	// should be roughly fast as there shouldn't be too terribly many children per parent 
+	// with the hashmap of tree nodes birth can occur in O(1) as insertion into the parents descendent list
+	// should be roughly fast as adding to a linked list is a quick operation
 	// If parent is not yet birthed will throw an illegal argument exception
 	// will only birth if the parent is alive, otherwise silently does nothing
 	public void birth(String parent, String child) {
@@ -48,8 +48,8 @@ public class Monarchy {
 		if (family.get(parent).alive) {
 			RoyalNode childNode = new RoyalNode(child);
 			family.put(child, childNode);
-			Map<Integer, RoyalNode> desc = family.get(parent).desc;
-			desc.put(desc.size() + 1, childNode);
+			List<RoyalNode> desc = family.get(parent).desc;
+			desc.add(childNode);
 		}
 	}
 	
@@ -84,8 +84,8 @@ public class Monarchy {
 			list.add(person.name);
 		}
 		
-		for (int i: person.desc.keySet()) {
-			orderHelper(list, person.desc.get(i));
+		for (RoyalNode child: person.desc) {
+			orderHelper(list, child);
 		}
 	}
 	

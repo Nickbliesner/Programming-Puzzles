@@ -1,6 +1,7 @@
-package nickCodingTest;
+package SearchingAlgorithms;
 
-import nickCodingTest.SortingAlgorithms.MergeSort;
+import SortingAlgorithms.MergeSort;
+import java.util.Random;
 
 // Class that contains a method for performing 
 // an interpolation search on a sorted int [].
@@ -14,12 +15,25 @@ import nickCodingTest.SortingAlgorithms.MergeSort;
 public class InterpolationSearch {
 	public static void main(String[] args) {
 		int[] arr = {1, 10, 12, 4, 2, 3, 9, 8, 5, 15, 13, 14, 17, 18, 6, 11, 1, 10, 12, 19, 20, 4, 7};
-		
+		int[] arr2 = new int[20];
+		Random r = new Random();
+
+		for (int i = 0; i < arr2.length; i++) {
+		    arr2[i] = r.nextInt(50) + 1;
+		}
+
 		printArray(arr);
 		int[] sorted = MergeSort.mergeSort(arr, 0, arr.length);
 		printArray(sorted);
-		int target = 19;
+		int target = 15;
 		System.out.println("The value of the search: " + interpolationSearch(sorted, target, 0, arr.length - 1));
+		System.out.println();
+
+		printArray(arr2);
+		int[] sorted2 = MergeSort.mergeSort(arr2, 0, arr2.length);
+		printArray(sorted2);
+		int target2 = 18;
+		System.out.println("The value of the search: " + interpolationSearch(sorted2, target2, 0, arr2.length - 1));
 	}
 	
 	// performs an interpolation search on the given  int[] arr
@@ -43,8 +57,8 @@ public class InterpolationSearch {
 		}
 			
 		// estimate where the value should be on the interval
-		int slope = (high - low) / (arr[high] - arr[low]);
-		int changeDx = slope * (target - arr[low]);
+		double slope = (high - low) / ((arr[high] - arr[low]) * 1.0);
+		int changeDx = (int) (slope * (target - arr[low]));
 		int index = low + changeDx;
 			
 		// it's not on the interval of possible values it can't

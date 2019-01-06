@@ -1,4 +1,4 @@
-package nickCodingTest;
+package DataStructures;
 
 // data structure which represents a dictionary of strings
 // as a prefix tree

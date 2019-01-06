@@ -1,4 +1,4 @@
-package nickCodingTest;
+package DataStructures;
 
 // Data structure that represents
 // the nodes in a linked list

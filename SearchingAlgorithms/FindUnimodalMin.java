@@ -1,4 +1,4 @@
-package nickCodingTest;
+package SearchingAlgorithms;
 
 // Class that contains a method to approximate where the minimum
 // value of a unimodal function f occurs on an interval from [a, b].
@@ -9,6 +9,7 @@ public class FindUnimodalMin {
 	public static void main(String[] args) {
 		double minX = ternarySearchMin(-100, 100, "func1");
 		System.out.println("the min of x^2 + 4x + 1, is x: " + minX + ", the minVal " + func1(minX));
+
 		minX = ternarySearchMin(3, 6, "func2");
 		System.out.println("the min of sin (x) between (0, 2PI), is x: " + minX + ", the minVal " + func2(minX));
 	}
