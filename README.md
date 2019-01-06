@@ -1,7 +1,7 @@
 # Programming-Puzzles
 Public repository to house my different approaches for many fun and exciting programming related problems!
 
-**DataStructures**- Implementation of various data structures (KHeap, Trie, monarchy/royal family tree, etc.)
+**DataStructures**- Implementation of various data structures (KHeap, LinkedIntList, Trie, Monarchy/Royal family tree, etc.)
 
 **DynamicProgramming** - Applying dynamic programming, solving the problem involves solving similar sub problems etc., to solve interesting math and computing questions (number of unique BST's, Combinations, min square sum, etc.)
 
