@@ -1,4 +1,4 @@
-package nickCodingTest;
+package GreedyAlgorithms;
 import java.util.*;
 
 // Implements Dijkstra's minpath algorthm to find the
