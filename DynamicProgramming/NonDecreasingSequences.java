@@ -1,4 +1,4 @@
-package nickCodingTest;
+package DynamicProgramming;
 
 // Class that contains a method
 // given integers n and m
