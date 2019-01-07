@@ -15,7 +15,7 @@ public class UniquePaths {
 				System.out.println("Recursive Unique paths for a grid of m: " + i + ", by n: " + j + ", " 
 						            + countPathsRecur(i, j, new int[i + 1][j + 1]));
 				System.out.println("Iterative Unique paths for a grid of m: " + i + ", by n: " + j + ", " 
-			            + countPathsIter(i, j));
+			            			    + countPathsIter(i, j));
 			}
 		}
 	
@@ -31,8 +31,10 @@ public class UniquePaths {
 	// [1 - m] X [1 - n], which is about n * m computations
 	// **if n and m are large enough could overflow the stack's memory
 	public static int countPathsRecur(int m, int n, int[][] cache) {
-		if (m == 0 || n == 0) {
-			throw new IllegalArgumentException("The given int n: " + n + ", and the given int m: " + ", can't be 0");
+		// verify that the grid has nonzero and non negative dimensions
+		// doesn't make sense to compute unique paths for 0 or negative dimensions
+		if (m <= 0 || n <= 0) {
+			throw new IllegalArgumentException("The given int n: " + n + ", and the given int m: " + ", can't be 0 or less");
 		}
 		
 		// if either grid dimension is 1 there's only one way
@@ -67,11 +69,13 @@ public class UniquePaths {
 	// take to get from the top left corner to the bottom	
 	// right corner of the grid only moving rightward and downward
 	// Worst case runtime is O (m * n) as in order to compute
-	// this it turns into computing unique paths paths for all grids with dimensions
-	// [1 - m] X [1 - n], which is about n * m computations
+	// this it turns into computing unique paths from all possible positions in the grid
+	// that the robot could be, which is n * m possible locations
 	public static int countPathsIter(int m, int n) {
-		if (m == 0 || n == 0) {
-			throw new IllegalArgumentException("The given int n: " + n + ", and the given int m: " + ", can't be 0");
+		// verify that the grid has nonzero and non negative dimensions
+		// doesn't make sense to compute unique paths for 0 or negative dimensions
+		if (m <= 0 || n <= 0) {
+			throw new IllegalArgumentException("The given int n: " + n + ", and the given int m: " + ", can't be 0 or less");
 		}
 			
 		// if either dimension is 1 there's only one unique path to take
@@ -102,6 +106,8 @@ public class UniquePaths {
 		// unique paths stemming from the current element
 		// for example: cache[0][0] = cache[0][1] + cache[1][0]
 		for (int k = m - 2; k >= 0; k--) {
+			// get the column we are computing values on of the current
+			// L subarea of the grid
 			int shift = m - k;
 			int col = n - shift;
 					
