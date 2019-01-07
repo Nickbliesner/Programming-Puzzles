@@ -1,4 +1,4 @@
-package nickCodingTest;
+package GreedyAlgorithms;
 
 // Data structure utilized by graph traversal
 // algorithms requiring the need to keep track of
