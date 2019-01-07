@@ -1,10 +1,11 @@
-package nickCodingTest;
+package DynamicProgramming;
 
 // Class that contains a method,
 // given an array as the bog will return the minimum number of jumps it
 // will take a frog to hop across the bog (reach past the last index of the input array) 
 // if at a given index i the max jump the frog can take is arr[i]
 // and if at any point 0 is encountered the frog gets stuck in the bog and can't keep jumping
+// if no valid jump path exists will return negative 1
 public class FrogJump {
 
 	public static void main (String[] args) {
@@ -62,7 +63,8 @@ public class FrogJump {
 				}
 				
 				// check whether or not we were able to find a min
-				// other than -1, if so add a jump from this index to the 
+				// other than -1, if so add a jump from this index to get to
+				// the min hops index
 				if (min != Integer.MAX_VALUE) {
 					min++;
 				} else {
