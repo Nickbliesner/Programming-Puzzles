@@ -1,4 +1,4 @@
-package nickCodingTest;
+package GreedyAlgorithms;
 import java.util.*;
 
 // Data structure which stores 
