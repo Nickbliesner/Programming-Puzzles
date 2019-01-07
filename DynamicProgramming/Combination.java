@@ -5,8 +5,8 @@ package DynamicProgramming;
 // as well as a number of successes, returns how many ways
 // to pick the number of successes from that many things
 // For example: 4 C 2 = 6 -> 1 1 0 0, 1 0 1 0, 
-//							 1 0 0 1, 0 1 1 0, 
-// 							 0 1 0 1, 0 0 1 1
+//			     1 0 0 1, 0 1 1 0, 
+// 			     0 1 0 1, 0 0 1 1
 public class Combination {
 
 	public static void main(String[] args) {
