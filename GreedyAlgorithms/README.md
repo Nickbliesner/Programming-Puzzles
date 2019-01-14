@@ -1,7 +1,7 @@
 # GreedyAlgorithms
 Implementation of various greedy algorithms, algorithms which assume the current optimal step leads to the best optimization
 
-**Dijkstras.java**- Applies Dijkstra's min path algorithm to find the smallest path from a target vertex to all other vertices in a connected weighted undirected graph 
+**Dijkstras.java**- Applies Dijkstra's min path algorithm to find the smallest path from a target vertex to all other vertices in a connected, weighted, undirected graph 
 
 **Pair.java**- Data structure used by Djikstra's algorithm to keep track of pairs of vertices as well as distances to those vertices
 
