@@ -13,4 +13,4 @@ Implementation of various data structures used to store different kinds of data 
 
 **Trie.java**-   Data structure which stores strings in a prefix tree, storing every common prefix only one time, supports adding, removing, and checking if a string is contained or a prefix
 
-**TrieNode.java** - Node class used by Trie to represent an individual node (whether or not it marks the end of a value) in the prefix tree, trie
+**TrieNode.java** - Node class used by Trie to represent an individual node (whether or not it marks the end of a value) in the prefix tree
