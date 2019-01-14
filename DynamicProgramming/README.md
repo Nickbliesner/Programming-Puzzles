@@ -1,4 +1,4 @@
-# SortingAlgorithms
+# DynamicProgramming
 Implementation of dynamic programming to solve various kinds of problems (many optimization) which in themselves require solving sub problems
 
 **Combination.java**-    Finds the number of combinations that can be created by picking m total items from a total of n things 
