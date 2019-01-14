@@ -1,4 +1,4 @@
-package nickCodingTest;
+package LinkedLists;
 
 // class that contains a method to determine
 // whether or not a linked list
