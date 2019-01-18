@@ -5,7 +5,7 @@ import java.util.*;
 // Given a list of men and women and their preferences
 // finds a set of pairs which is a stable matching, ie. noone
 // has incentive to swap their current partner with one
-// that is higher up on the preference list currently paired with
+// that is higher up on their preference list currently paired with
 // someone else
 public class StableMatching {
 	public static void main(String[] args) {
