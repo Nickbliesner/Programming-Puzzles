@@ -5,6 +5,8 @@ Public repository to house my different approaches for many fun and exciting pro
 
 **DynamicProgramming** - Applying dynamic programming, solving the problem involves solving similar sub problems etc., to solve interesting math and computing questions (number of unique BST's, Combinations, min square sum, etc.)
 
+**GraphAlgorithms**- Algorithms applied to analyze graphs and get information about them (TwoColorable etc.)
+
 **GreedyAlgorithms**- Implementation of various greedy Algorithms (Dijkstra's, word to word, etc.) which assume at a certain step the optimal one (min or max) will lead to the right solution
 
 **LinkedLists** - Problem solving involving linked lists and linked list manipulation (sublistSearch etc.), using list nodes
